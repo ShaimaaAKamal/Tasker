@@ -1,0 +1,30 @@
+<section class="welcome-on-boarding">
+ <div class="welcome-container">
+   <div class="header-container">
+        <h1>Tasker</h1>
+        <i class="fa-regular fa-clock fa-rotate-270"></i>
+   </div>
+   <div class="content">
+    @switch (displayBoardingPage) {
+        @case ('welcome') {
+                <app-welcome (navigatedSection)="onBoardingNavigate($event)"></app-welcome>
+        }
+        @case ('companySize') {
+          <app-company-size-question (navigatedSection)="onBoardingNavigate($event)"></app-company-size-question>
+        }
+        @case ('speciality'){
+          <app-speciality (navigatedSection)="onBoardingNavigate($event)"></app-speciality>
+        }
+          @case ('position'){
+          <app-position (navigatedSection)="onBoardingNavigate($event)"></app-position>
+        }
+          @case ('finish'){
+          <app-finish (navigatedSection)="onBoardingNavigate($event)"></app-finish>
+        }
+        @default {
+          <p></p>
+        }
+      }
+   </div>
+ </div>
+</section>

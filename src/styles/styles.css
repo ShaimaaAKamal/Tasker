@@ -1,0 +1,20 @@
+@import "@fontsource/poppins";
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+:root{
+  --main-color:#30BFF3;
+  --main-color-light:#98d6ed;
+  --main-color-checked:#9BCF01;
+  --secondary-color:grey;
+  --border-color:#ccc;
+}
+
+.main-color{
+background-color: var(--main-color);
+color:#fff;
+}

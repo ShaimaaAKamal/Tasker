@@ -1,0 +1,53 @@
+.welcome-on-boarding{
+  width: 100vw;
+  padding:1rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-on-boarding  .welcome-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 80%;
+  margin:0 auto;
+}
+.header-container{
+  position: relative;
+}
+
+.header-container i{
+  position: absolute;
+  color: var(--main-color);
+  right:-15px;
+  top:-2px;
+}
+
+.welcome-container h1{
+  margin-bottom: .5rem;
+  font-size: 2rem;
+}
+
+h1::first-letter {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.content{
+  align-self: stretch;
+}
+
+@media screen and (min-width:992px) {
+.welcome-on-boarding  .welcome-container{
+  width: 60%;
+}
+}
+
+@media screen and (min-width:1200px) {
+.welcome-on-boarding  .welcome-container{
+  width: 40%;
+}
+}
