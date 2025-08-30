@@ -7,7 +7,7 @@
    <div class="content">
     @switch (displayBoardingPage) {
         @case ('welcome') {
-                <app-welcome (navigatedSection)="onBoardingNavigate($event)"></app-welcome>
+            <app-welcome (navigatedSection)="onBoardingNavigate($event)"></app-welcome>
         }
         @case ('companySize') {
           <app-company-size-question (navigatedSection)="onBoardingNavigate($event)"></app-company-size-question>

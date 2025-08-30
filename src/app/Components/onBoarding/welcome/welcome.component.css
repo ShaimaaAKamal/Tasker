@@ -15,6 +15,18 @@
 
 .btn-container{
   text-align: end;
-  margin-top:1rem;
+  margin-top:2rem;
 }
 
+.parent {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width:768) {
+.parent {
+  min-height: 60vh;
+}
+}

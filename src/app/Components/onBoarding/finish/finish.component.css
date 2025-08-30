@@ -8,5 +8,20 @@ img{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top:3rem
+  margin-top:2rem
+}
+
+.parent {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+@media screen and (min-width : 768px) {
+.parent {
+  min-height: 60vh;
+}
 }

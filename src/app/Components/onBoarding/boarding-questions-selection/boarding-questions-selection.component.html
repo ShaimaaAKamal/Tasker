@@ -1,10 +1,13 @@
-   <p>{{data().title}}</p>
+<div class="parent">
+     <div>
+    <p>{{data().title}}</p>
    <div class="options">
      @for (option of data().options; track $index; let i = $index) {
          <div class="option">
         <span>{{option}}</span>
        </div>
     }
+   </div>
    </div>
    <div class="navigations">
       <app-site-main-btn [message]="'Back'" (click)="onBoardingNavigate(data().backNavigation)"></app-site-main-btn>
@@ -13,4 +16,6 @@
             <app-site-main-btn [message]="data().ContinueMessage" (click)="onBoardingNavigate(data().nextNavigation)"></app-site-main-btn>
       </div>
    </div>
+
+</div>
 
